@@ -1,27 +1,42 @@
 # Lottotest
 
+This project is an excercise to demonstrate ability in Angular.  The requirements outlined below need to be satisfied.  It is design to 
+test:
+- Basic understanding of HTTP communication
+- User interface design in HTML and CSS/SASS
+- Basic angular routing
+- Form validation concepts
+- Algorithms and array handling
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
 
-## Development server
+You may use external libraries if required.  Try not to bloat it though.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Please fork this repository and send us back a public version.
 
-## Code scaffolding
+## Requirements
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+This project is a simple lottery ticket purchasing screen.  It will allow the user to purchase
+up to 10 lines of 6 numbers between 1 and 45.
 
-## Build
+The form built in this task must use Angular's Reactive Forms.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+The form should be in its own component and routed to using the angular routing.
 
-## Running unit tests
+The user must be able to add and remove lines as they see fit.  Entering in their personal choices or requesting a set of random numbers.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+The random numbers must be obtained via HTTP requests to this [Random Number API](http://www.randomnumberapi.com/).  Bonus points if dependency injection is used to provide this functionality via a service.
 
-## Running end-to-end tests
+It must look at least a little nice, with just a touch of CSS - please don't use the default unstyled buttons and inputs.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+It must validate that the user has:
+- Filled in all of the appropriate boxes.
+- Not added duplicate numbers on each line.
+- Not added duplicate lines.
 
-## Further help
+The user should press a button to trigger the validation and be appropriately warned of success or failure.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Time limitations
+
+There is no time limit but ideally it should not take longer than two days.
+You can send it unfinished if you think it requires more time.
