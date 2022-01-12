@@ -21,7 +21,7 @@ up to 10 lines of 6 numbers between 1 and 45.
 
 The form built in this task must use Angular's Reactive Forms.
 
-The form should be in its own component and routed to using the angular routing.
+The form should be in its own component and routed to using the angular routing.  You can use the cli to generate the component as `ng g c buy-tickets`.  See the `angular-routing.module.ts` file where there is already a `/buy-tickets` route.
 
 The user must be able to add and remove lines as they see fit.  Entering in their personal choices or requesting a set of random numbers.
 
