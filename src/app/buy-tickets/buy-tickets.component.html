@@ -1,0 +1,34 @@
+<h1>buy-tickets works!</h1>
+<div [formGroup]="ticketForm">
+  <ng-container formArrayName="lines">
+    <ng-container  *ngFor="let lineForm of lines.controls; let i = index" formGroupName="{{i}}">
+      <div class="lottoLine">
+        <mat-slider thumbLabel formControlName="num1" min="1" max="45">
+        </mat-slider>
+        <mat-slider thumbLabel formControlName="num2" min="1" max="45">
+        </mat-slider>
+        <mat-slider thumbLabel formControlName="num3" min="1" max="45">
+        </mat-slider>
+        <mat-slider thumbLabel formControlName="num4" min="1" max="45">
+        </mat-slider>
+        <mat-slider thumbLabel formControlName="num5" min="1" max="45">
+        </mat-slider>
+        <mat-slider thumbLabel formControlName="num6" min="1" max="45">
+        </mat-slider>
+        <mat-icon class="delete-btn material-icons" (click)="deleteLine(i)">
+          delete_forever
+        </mat-icon>
+        <mat-icon (click)="randomise(i)">autorenew</mat-icon>
+      </div>
+    </ng-container>
+  </ng-container>
+
+
+  <button mat-stroked-button (click)="addLine()" *ngIf="lines.length < 9">Add Line</button>
+</div>
+<button mat-stroked-button class="btn btn-primary" (click)="onSubmit()">Submit</button>
+
+<!--<p>Form Status: {{ ticketForm.status }}</p>
+<p>{{ticketForm.value | json}}</p>
+<p>{{lines.length}}</p>-->
+

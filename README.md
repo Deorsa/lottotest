@@ -1,3 +1,6 @@
+To overcome a CORS error i'm using a proxy. To activate the proxy
+navigate to https://cors-anywhere.herokuapp.com/ in you browser click the start demo button.
+
 # Lottotest
 
 This project is an excercise to demonstrate ability in Angular.  The requirements outlined below need to be satisfied.  It is design to 
